@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #1b1b1d;
+  color: #fff;
+}
+
+.lockscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-box {
+  text-align: center;
+  padding: 40px;
+  position: relative;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #25c2a0;
+}
+
+.site-subtitle {
+  font-size: 1rem;
+  color: #a0a0a0;
+  margin-bottom: 30px;
+}
+
+.password-input {
+  width: 260px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #2a2a2d;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.password-input:focus {
+  border-color: #25c2a0;
+}
+
+.password-input::placeholder {
+  color: #888;
+}
+
+.error-message {
+  margin-top: 12px;
+  color: #e74c3c;
+  font-size: 0.875rem;
+}
+
+.shake {
+  animation: shake 0.6s ease-in-out;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(10px); }
+  40%  { transform: translateX(-10px); }
+  60%  { transform: translateX(10px); }
+  80%  { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
